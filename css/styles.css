@@ -210,3 +210,28 @@ section article{position:absolute;top:240px;left:40px;width:300px;z-index:4;}
 .gallery-container a:last-child{
   width: 34%;
 }
+
+.studio-article{
+  width: 100%;
+}
+
+.studio-text{
+  width: 300px;
+  float: left;
+}
+
+.studio-slider{
+  width: 700px;
+  float: right;
+  margin-right: 200px
+}
+
+.flexslider {
+    width: 700px;
+    height: 300px;
+}
+
+.flexslider .slides img {
+    width: 700px;
+    height: 300px;
+}

@@ -4,10 +4,12 @@
       <title>Some Title</title>
       <link rel="stylesheet" href="css/styles.css">
       <link href="css/lightbox.css" rel="stylesheet" />
+      <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
       <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
       <script src="js/jquery.scrolly.js"></script>
       <script src="js/lightbox-2.6.min.js"></script>
       <script type="text/javascript" src="js/smooth-scroll.js"></script>  
+      <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
       <script type="text/javascript" src="js/js.js"></script>
   </head>
   <body>
@@ -59,12 +61,28 @@
           <div class="parallax" data-velocity="-.5" data-fit="525"></div>
       </section>
       <section class="studio-page" id="goto-studio">
-          <article>
-          <h1>Studio</h1>
-          <p><i>Title 3</i>
-          text od levo i slider od desno
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <article class="studio-article">
+            <h1>Studio</h1>
+            <p class="studio-text">
+              <i>Title 3</i>
+              text od levo i slider od desno
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="studio-slider">
+              <div class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <img src="http://placehold.it/750x301" />
+                  </li>
+                  <li>
+                    <img src="http://placehold.it/750x302" />
+                  </li>
+                  <li>
+                    <img src="http://placehold.it/750xv303" />
+                  </li>
+                </ul>
+              </div>
+            </div>
           </article>
           <div class="parallax" data-velocity="-.1"></div>
           <div class="parallax" data-velocity="-.5" data-fit="525"></div>
