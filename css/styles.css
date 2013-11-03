@@ -49,7 +49,10 @@ section {
 
 section:nth-of-type(1){background:whitesmoke;height:1200px;}
 section:nth-of-type(2){background:black;height:1600px;}
-
+section img{
+  width:100%;
+  height:100%;
+}
 .home-page>div:nth-of-type(1){
     background: url(../img/bg-image-main.jpg) 50% 0 no-repeat fixed;
     background-size:cover;
@@ -118,6 +121,19 @@ section h1{color:#4F9426;width:300px;font-size:65px;margin-bottom:14px;text-tran
 section p{color:black;width:300px;}
 section article{position:absolute;top:240px;left:40px;width:300px;z-index:4;}
 
+section.home-page article{
+  position:absolute;
+  top:100px;
+  left:0;
+  margin:0 5%;
+  width:90%;
+  z-index:4;
+}
+section.home-page article p{
+  float:left;
+  width:30%;
+  margin:0 1.5%;
+}
 .parallax-item{position:absolute;z-index:5;top:40px;left:400px;}
 
 .header-container{
