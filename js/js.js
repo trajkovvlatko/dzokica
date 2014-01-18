@@ -41,4 +41,25 @@ $(document).ready(function(){
     prevText: "",
     nextText: ""
   });
+
+  $(".contact-form-button button").click(function(){
+    var email = $.trim($(".contact-form-input input").val());
+    var message = $.trim($(".contact-form-textarea textarea").val());
+    if(email != "" && message != ""){
+      $.ajax({
+        type: "POST",
+        url: "http://localhost/dzokica/contact.php",
+        data: {
+          email: email,
+          message: message
+        },
+        success: function(data){
+          $(".contact-form-info").html(data);
+          $(".contact-form-input input").val("")
+          $(".contact-form-textarea textarea").val("")
+        }
+      });
+    }
+  });
+
 });
